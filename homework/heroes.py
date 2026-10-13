@@ -11,7 +11,7 @@ hero1 = {
     "level": 1,
     "specialty": "Chain Lightning",
     "army": ["Gremlins", "Stone Gargoyles"],
-    "best_creature": "Titan",
+    "best_creature": "Titan"
 }
 
 hero2 = {
@@ -27,5 +27,13 @@ hero2 = {
     "level": 1,
     "specialty": "Fire Wall",
     "army": ["Pixies", "Air Elementals"],
-    "best_creature": "Phoenix",
+    "best_creature": "Phoenix"
 }
+
+for hero in (hero1, hero2):
+    print(f"--- {hero['name']} ---")
+    for key, value in hero.items():
+        print(f"{key}: {value}")
+    print()
+
+
